@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:orientation="vertical"
+    tools:context="com.example.anonymous.calculator.MainActivity"
+    >
+
+    <TextView
+        android:id="@+id/edittext"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:textSize="50sp"
+        android:background="#000000"
+        android:textColor="#ffff"
+        android:paddingLeft="30dp"
+        android:paddingTop="20dp"
+        android:fontFamily="@font/roboto_mono_light"
+        />
+
+    <TextView
+        android:id="@+id/textbox"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#000000"
+        android:fontFamily="@font/roboto_mono_light"
+        android:paddingLeft="30dp"
+        android:textColor="#ffff"
+        android:textSize="30sp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:background="#d50000"
+        android:columnCount="4"
+        android:rowCount="5">
+
+        <TextView
+            android:id="@+id/C"
+            style="@style/buttons"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="C" />
+
+        <TextView
+            android:id="@+id/openbrace"
+            style="@style/buttons"
+
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="(" />
+
+        <TextView
+            android:id="@+id/closebrace"
+            style="@style/buttons"
+
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text=")" />
+
+        <TextView
+            android:id="@+id/mult"
+            style="@style/buttons"
+            android:layout_columnWeight="1"
+
+            android:layout_rowWeight="1"
+            android:text="*" />
+
+        <TextView
+            android:id="@+id/seven"
+            style="@style/buttons"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="7" />
+
+        <TextView
+            android:id="@+id/eight"
+            style="@style/buttons"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="8" />
+
+        <TextView
+            android:id="@+id/nine"
+            style="@style/buttons"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="9" />
+
+        <TextView
+            android:id="@+id/divide"
+            style="@style/buttons"
+            android:layout_columnWeight="1"
+
+            android:layout_rowWeight="1"
+            android:text="/" />
+
+        <TextView
+            android:id="@+id/four"
+            style="@style/buttons"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="4" />
+
+        <TextView
+            android:id="@+id/five"
+            style="@style/buttons"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="5" />
+
+        <TextView
+            android:id="@+id/six"
+            style="@style/buttons"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="6" />
+
+        <TextView
+            android:id="@+id/plus"
+            style="@style/buttons"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+
+            android:text="+" />
+
+        <TextView
+            android:id="@+id/one"
+            style="@style/buttons"
+            android:layout_columnWeight="1"
+
+            android:layout_rowWeight="1"
+            android:text="1" />
+
+        <TextView
+            android:id="@+id/two"
+            style="@style/buttons"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="2" />
+
+        <TextView
+            android:id="@+id/three"
+            style="@style/buttons"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="3" />
+
+        <TextView
+            android:id="@+id/minus"
+            style="@style/buttons"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+
+            android:text="-"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/zero"
+            style="@style/buttons"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/doubleZero"
+            style="@style/buttons"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="00" />
+
+        <TextView
+            android:id="@+id/decimal"
+            style="@style/buttons"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="." />
+
+        <TextView
+            android:id="@+id/backspace"
+            style="@style/buttons"
+
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="@string/backspace" />
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/equals"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="0dp"
+        android:paddingBottom="10dp"
+        android:background="#d50000"
+        android:fontFamily="@font/roboto_mono_light"
+        android:text="="
+        android:textColor="#ffff"
+        android:textSize="40sp" />
+</LinearLayout>
+
